@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	VideoCapture video;
   Mat frame;
 	
-  video.open("tik.mp4");
+  video.open(argv[1]);
 
   if (video.isOpened() == false)
   {                                          

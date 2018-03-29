@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <stdlib.h>
+#include <stdio.h>
 
 #include <gtk/gtk.h>
 
@@ -71,6 +72,8 @@ static void activate (GtkApplication *app, gpointer user_data)
 
 int main(int argc, char **argv)
 {
+	setStatus("resume");
+	
 	GtkApplication *app;
 	int status;
 	
