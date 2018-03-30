@@ -8,7 +8,7 @@
 
 using namespace std;
 
-
+// this function will set a status to file => status.txt
 void setStatus(string status)
 {
 	ofstream file;
@@ -72,8 +72,10 @@ static void activate (GtkApplication *app, gpointer user_data)
 
 int main(int argc, char **argv)
 {
+	// always set the initial value of status.txt to resume
 	setStatus("resume");
 	
+	// this gtk codes to open a window
 	GtkApplication *app;
 	int status;
 	
