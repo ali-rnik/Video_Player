@@ -11,6 +11,6 @@ cd build
 
 #compiling git
 cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make
+make -j $(nproc)
 sudo make install
 
