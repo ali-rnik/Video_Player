@@ -14,7 +14,7 @@ packages=""
 if (( $install_optional_packages == "yes" )); then
     $packages="cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev"
 else
-    $packages="cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev"
+    $packages="cmake git libgtk2.0-dev libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev"
 fi
 
 # If you are interested in openCV installation process you may want to visit: https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
