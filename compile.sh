@@ -2,7 +2,7 @@
 
 compile_and_link ()
 {
-	g++ -g $1 -o $2 `pkg-config --cflags --libs gtk+-3.0 opencv`
+	g++ -std=c++11 -g $1 -o $2 `pkg-config --cflags --libs gtk+-3.0 opencv`
 }
 
 
