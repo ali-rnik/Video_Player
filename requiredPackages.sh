@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# check if root access provided by user
+# check if root access is provided by user
 if [ "$EUID" -ne 0 ]; then
     echo "This bash file will install some required packages on your device. Please provide root access by executing \"sudo ./requiredPackages.sh\"."
     exit
@@ -18,7 +18,7 @@ else
 fi
 
 # If you are interested in openCV installation process you may want to visit: https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
-#clone OpenCV from git
+# clone OpenCV from git
 git clone https://github.com/opencv/opencv.git
 cd opencv
 mkdir build
